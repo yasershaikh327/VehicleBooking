@@ -1,0 +1,90 @@
+  /* Container for the input field */
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* The input field itself */
+input[type="text"].name-input {
+    width: 30%;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Placeholder text */
+input[type="text"].name-input::placeholder {
+    color: #999;
+    transition: all 0.3s ease;
+}
+
+/* Focus state for the input field */
+input[type="text"].name-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Label for the input field */
+.input-label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #007bff;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* Focused state for the label */
+input[type="text"].name-input:focus + .input-label,
+input[type="text"].name-input:not(:placeholder-shown) + .input-label {
+    top: -20px;
+    left: 10px;
+    font-size: 10px;
+    color: #007bff;
+}
+
+/* Container hover effect */
+.input-container:hover input[type="text"].name-input {
+    border-color: #007bff;
+}
+
+            /* Basic button styles */
+button.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover state for the button */
+button.custom-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 91, 187, 0.2);
+}
+
+/* Active state for the button */
+button.custom-button:active {
+    background-color: #004085;
+    box-shadow: 0 2px 4px rgba(0, 64, 133, 0.2);
+}
+
+/* Disabled state for the button */
+button.custom-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
